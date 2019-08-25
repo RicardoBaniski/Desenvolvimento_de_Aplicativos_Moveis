@@ -1,53 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DADOS"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editDados"
-        android:inputType="number"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Dados: "
-        android:textAlignment="center" />
+        android:text="Calcula Dados"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
 
     <EditText
-        android:id="@+id/editLados"
-        android:inputType="number"
-        android:layout_marginTop="30dp"
-        android:hint="Número de lados: "
+        android:id="@+id/editDadosNum"
+        android:inputType="numberDecimal"
+        android:hint="Número de Dados"
         android:textAlignment="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/textSoma"
+    <EditText
+        android:id="@+id/editLadosNum"
+        android:inputType="numberDecimal"
+        android:hint="Número de Lados"
         android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="num_lancamento"
+        android:text="Calcular"
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soma"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/textSoma"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
 
-    <Button
-        android:onClick="calculaSoma"
-        android:text="CALCULAR SOMA"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lados"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+    <ListView
+        android:id="@+id/listLado"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
 
 </LinearLayout>

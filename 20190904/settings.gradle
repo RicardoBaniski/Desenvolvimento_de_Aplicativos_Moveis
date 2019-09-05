@@ -1,0 +1,2 @@
+include ':app', ':listaopet'
+rootProject.name='20190904'

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aula8</string>
+    <string name="titulo_textview">Titulo:</string>
+    <string name="ano_textview">Ano:</string>
+    <string name="like_button">Like</string>
+</resources>
